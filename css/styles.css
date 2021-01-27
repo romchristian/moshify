@@ -298,6 +298,7 @@ a {
   border: none;
   padding: 1.5rem 2rem;
   flex-grow: 1;
+  width: 0;
 }
 
 .input-group .btn {
@@ -454,7 +455,7 @@ a {
 }
 
 .quote__autor {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
@@ -508,8 +509,8 @@ a {
 }
 
 .testimonial__image {
-  width: 100%;
   position: relative;
+  margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -520,6 +521,11 @@ a {
   position: absolute;
   right: -32px;
   top: 3rem;
+}
+
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
 }
 
 @media screen and (min-width: 768px) {
@@ -725,10 +731,14 @@ a {
   width: 100%;
 }
 
+.hero__content {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
   }
+
   .hero__content {
     text-align: left;
     align-self: center;
@@ -744,6 +754,7 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
@@ -862,6 +873,10 @@ a {
   transition: color 0.3s;
 }
 
+.footer a:hover {
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) {
   .footer__logo {
     order: -1;
@@ -888,5 +903,9 @@ a {
 
   .footer .collapsible {
     border: 0;
+  }
+
+  .footer__copyright {
+    font-size: 1.6rem;
   }
 }
